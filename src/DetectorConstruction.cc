@@ -58,6 +58,9 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4double z;  // atomic number
   G4double density;
 
+  G4Material* Vacuum =
+          new G4Material("Galactic", z=1.0, a=1.01*g/mole, density=universe_mean_density,
+          kStateGas, 2.73*kelvin, 3.0e-18*pascal);
   G4Material* Ar =
   new G4Material("ArgonGas", z= 18., a= 39.95*g/mole, density= 1.782*mg/cm3);
 
@@ -78,7 +81,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4Box* experimentalHall_box
     = new G4Box("expHall_box",expHall_x,expHall_y,expHall_z);
   experimentalHall_log = new G4LogicalVolume(experimentalHall_box,
-                                             Ar,"expHall_log",0,0,0);
+                                             Vacuum,"expHall_log",0,0,0);
   experimentalHall_phys = new G4PVPlacement(0,G4ThreeVector(),
                                       experimentalHall_log,"expHall",0,false,0);
 
