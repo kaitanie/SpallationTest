@@ -39,7 +39,7 @@ int main()
 
   // Start a run
   //
-  G4int numberOfEvent = 3;
+  G4int numberOfEvent = 1000000;
   runManager->BeamOn(numberOfEvent);
 
   // Job termination
