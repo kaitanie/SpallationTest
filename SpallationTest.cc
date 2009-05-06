@@ -33,9 +33,9 @@ int main()
   // Get the pointer to the UI manager and set verbosities
   //
   G4UImanager* UI = G4UImanager::GetUIpointer();
-  UI->ApplyCommand("/run/verbose 1");
-  UI->ApplyCommand("/event/verbose 1");
-  UI->ApplyCommand("/tracking/verbose 1");
+  //UI->ApplyCommand("/run/verbose 1");
+  //UI->ApplyCommand("/event/verbose 1");
+  //UI->ApplyCommand("/tracking/verbose 1");
 
   // Start a run
   //
