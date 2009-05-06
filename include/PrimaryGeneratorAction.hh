@@ -22,7 +22,7 @@ public:
     void GeneratePrimaries(G4Event* anEvent);
 
 private:
-    G4ParticleGun *theGun;
+    G4ParticleGun *particleGun;
 };
 
 #endif	/* _PRIMARYGENERATORACTION_HH */

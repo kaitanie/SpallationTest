@@ -23,8 +23,8 @@ int main()
 
   // set mandatory user action class
   //
-  //G4VUserPrimaryGeneratorAction* gen_action = new ExN01PrimaryGeneratorAction;
-  //runManager->SetUserAction(gen_action);
+  G4VUserPrimaryGeneratorAction* gen_action = new PrimaryGeneratorAction;
+  runManager->SetUserAction(gen_action);
 
   // Initialize G4 kernel
   //
