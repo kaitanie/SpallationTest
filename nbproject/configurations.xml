@@ -28,6 +28,12 @@
         <platform>2</platform>
       </toolsSet>
       <compileType>
+        <ccCompilerTool>
+          <includeDirectories>
+            <directoryPath>../../geant4/geant4-09-02-ref-00/include</directoryPath>
+            <directoryPath>include</directoryPath>
+          </includeDirectories>
+        </ccCompilerTool>
         <linkerTool>
           <linkerLibItems>
           </linkerLibItems>
